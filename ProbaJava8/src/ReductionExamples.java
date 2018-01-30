@@ -66,22 +66,14 @@ public class ReductionExamples {
         
         // 2. Sum of ages with sum operation
         
-        Integer totalAge = roster
-            .stream()
-            .mapToInt(Person::getAge)
-            .sum();
+        Integer totalAge = null; // TODO: Osatu
             
         System.out.println("Sum of ages (sum operation): " +
             totalAge);
         
         // 3. Sum of ages with reduce(identity, accumulator)
         
-        Integer totalAgeReduce = roster
-            .stream()
-            .map(Person::getAge)
-            .reduce(
-                0,
-                (a, b) -> a + b);
+        Integer totalAgeReduce =  null; // TODO: Osatu
             
         System.out.println(
             "Sum of ages with reduce(identity, accumulator): " +
@@ -100,11 +92,7 @@ public class ReductionExamples {
         // 5. Names of male members with collect operation
 
         System.out.println("Names of male members with collect operation: ");         
-        List<String> namesOfMaleMembersCollect = roster
-            .stream()
-            .filter(p -> p.getGender() == Person.Sex.MALE)
-            .map(p -> p.getName())
-            .collect(Collectors.toList());         
+        List<String> namesOfMaleMembersCollect = null;    // TODO: Osatu
 
         namesOfMaleMembersCollect
             .stream()
